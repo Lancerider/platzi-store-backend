@@ -1,0 +1,28 @@
+languaje: node_js
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+
+node_js: '12'
+
+git:
+  depth: 3
+
+script:
+  - yarn test
+
+notifications:
+  slack: skyairlinedes-wgr2685:CzxtSptS3OXBVarkM88CFGR1
+    on_success: always
+    on_failure: always
+
+deploy:
+  provider: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key: 23d7cd5c-c6ce-4e3b-abad-4fc64550ba18
+  app: platzi-travis
+  on:
+    repo: lancerider/platzi-store-backend
+  
