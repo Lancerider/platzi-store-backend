@@ -13,15 +13,15 @@ script:
   - yarn test
 
 notifications:
-  slack: skyairlinedes-wgr2685:CzxtSptS3OXBVarkM88CFGR1
-    on_success: always
-    on_failure: always
+  slack: 
+    secure: "ghp/4IovCNTKnlxCvsn2mX4mQjaC5kfY53Nttxsryyw+ZN38N3YmuWe4Rx+Rp4PlyhdrQiUlWGvQVD9uhDTwK8J6JJvl4518CUGwaj5geeBn8eHbfYV1dUFY2KQjhVqJGx+3B6FJtZ3bXFwNrS9HtFX1QM8Z/jmLrAgbmOQOxHU6OIn5w6vFD7iqLhhLVBMJFBN1O7bp7KMtTe4Gar3aa3b8uHFz0+8DBjQ5/WOr5JTzX8vTOR50tm+AcEESWQVGYuxgfvoPVWGFhbI3tuzbvKvwXm56ZBuk4eQDKjWdwdYLqEr/fs3u+Ed+gzXdHzHTf+SjZHapZTJDxMs7bl2Av9WhaXuD1i+X1jJ9t4rLcUFrIsOXSgvBGLvxb8jJLp65ewIOXCnWfdaLaKbJiopwYygMv9fX1WhTGdhnglxrkZmpsHq1mMBdfgUq6YvbhojpZgtGi9IKkUCYOnAP9iNzEjq3lnXwJZ2rCIkahz3T+Yhvz9mY693BoutuEndcd0eoEFECVe22IdcBuRXTlXneHoKlFotFTrlVb84HblMjEv118qRMX5kYpzsQl6MdGdvsvBcJFi35PPdYPpU7u/+qabTdgK3mjMjv9kyayfznm1kpZ+9HP6wtR6XH4KxSYIoLzOcItX0qt2CD7BI1BUyEwmpSEa1lxNIZTp1muljq0u4="
 
 deploy:
   provider: heroku
   skip-cleanup: true
   keep-history: true
-  api_key: 23d7cd5c-c6ce-4e3b-abad-4fc64550ba18
+  api_key: 
+    secure: "VQTuQ1UU5JAYkZW94ypMv4Us/PIIneC9deCn/+MgRDkGZONKN+ZQ0N7shiLZw/stJKTc8/DT3fqUtMAL7/Ibiw3jXKHKleoxJPi/McO6dsSEKva2jTCXMJ9uYR/6UAi4asl/I28lj5W5IXAfhQxI8V8ojw0+1gXgItTuDukCdxunY0lsA5r6WyBrj6mx0HO5QzHi9rruMphWRF5Gh47hrwDOf+TrSUn+flOgpxcIgBqbmNwUhWCvZnvAZKRhfn27XttAaa6udFuhwF9lHXQ2EpLGACJRoRfwfH8lyEqIJeCcCwIXpOUs9quklZrCUayKAooqCX7g3szKzoteYAJ995sNe8fgu2+7yBl6wU27DqMXWIrOgsbL81kCeeeO3ZaW+514N7cZcadggnCxb14zNUCuP6zUnaKAl3R1esicqmCz6xACiOVsS4SMAMJJf0qarhXMPAv1ClqxnmtA1f+oqw7c7aGT7PvMWvF8F9OwKS8Ea00FXH2lBX8uV0V5mWkTnbc0udr851iJ+g7rHaGwcoac4jXVxcY0qDE3/R9YNAjI6+oVZVtVAbtTxGneZWBW8jdfmuQV3jJa1QBbM1C39uebt0Cl4KNEbZ3XeMuEZJYCC+gv0f/BFRCztkKRbnlP1xOh1SiPps0/jTeym8c8PWqTCyA6eVp0JiYXqwXFawo="
   app: platzi-travis
   on:
     repo: Lancerider/platzi-store-backend
